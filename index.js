@@ -4,7 +4,7 @@ let TIME_SIZE = 48;
 window.onload = function(){
 	let dates = [];
 
-	$("day-input-area").datepicker();
+	$("#day-input-area").datepicker();
 	
 	document.onmousedown = function(evt){
 	  dragging = true;
