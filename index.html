@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <title>DATE-PICKER</title>
+    <link href="style.css" type="text/css" rel="stylesheet" />
+    <link href="air-datepicker/dist/css/datepicker.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lekton" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="http://mplus-fonts.sourceforge.jp/webfonts/general-j/mplus_webfonts.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="air-datepicker/dist/js/datepicker.min.js"></script>
+    <script type="text/javascript" src="air-datepicker/dist/js/i18n/datepicker.en.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+
+  </head>
+  <body>
+    <div id='cover'></div>
+  	<div id='step1' class='is-show centered'>
+      <h1>Date Picker</h1>
+      <h2>Step1: Select Days</h2>
+			<input type="text"
+	    data-range="true"
+	    data-multiple-dates-separator=" - "
+	    data-language="en"
+	    class="datepicker-here" id="day-input-area" />
+	    <button type="button" class='btn' id="day-confirm-btn">OK!</button>
+	  </div>
+    <div id='step2' class="centered">
+
+	    <h2>Step2: Select Time</h2>
+	    <button type="button" class='btn' id="time-confirm-btn">OK!</button>
+      <div id='schedule-field'></div>
+	  </div>
+
+    
+    <div id='step3' class="centered">
+    	<h2>Congratulation!</h2>
+    	<p>You can copy & paste your schedule!</p>
+    	<textarea name="result" id="result"></textarea>
+      <button type="button" class='btn' id="reset">Again</button>
+    </div>
+  </body>
+</html>

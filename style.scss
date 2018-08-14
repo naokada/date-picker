@@ -1,0 +1,192 @@
+@import 'reset';
+@import 'variables';
+
+* {
+	font-family: 'Lekton', sans-serif;;
+}
+
+body {
+	background-color: $color-primary-0;
+	color: $font-color;
+	height: 100vh;
+	overflow: hidden;
+}
+
+[id^="step"] {
+	transition: opacity 2s, visibility 2s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+[id^="step"].is-show {
+	height: 100%;
+	opacity: 1;
+  visibility: visible;
+  > * {
+  	margin: 30px;
+  }
+}
+
+.hidden {
+	display:  none !important;
+}
+
+.datepicker-here {
+	width: 200px;
+}
+
+.btn, .datepicker-here {
+	height: 30px;
+}
+
+.date {
+	margin-bottom: 30px;
+	border: solid 1px #DCDCDC;
+	width: 768px;
+}
+
+.date * {
+	margin: 0;
+}
+
+[id^='date'] {
+	background-color: $color-complement-1;
+}
+
+#schedule-field {
+	overflow: auto;
+	height: 60vh;
+}
+
+.date-discripton {
+	color: $color-primary-0;
+}
+
+.time-block-field {
+	height: 27px;
+	display: flex;
+}
+
+.time-block {
+	height: 27px;
+	width: 14px;
+	border: solid 1px $color-complement-2;
+}
+
+.time-block:hover {
+	background-color: $color-complement-2;
+}
+
+.selected {
+	background-color: $color-complement-3;
+}
+
+#step1 > * {
+	margin: 20px;
+
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  background: $color-complement-3;
+  color: $color-complement-1;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  border-radius: 50%;
+  text-align: center;
+  font-weight: bold;
+  vertical-align: middle;
+  overflow: hidden;
+  border-color: $color-complement-1;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+  border-bottom: solid 3px $color-complement-4;
+  transition: .4s;
+}
+
+.btn:active { 
+  -ms-transform: translateY(2px);
+  -webkit-transform: translateY(2px);
+  transform: translateY(2px);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+  border-bottom: none;
+}
+
+.flexbox {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.centered {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#result {
+	margin: 0 auto;
+	width: 70%;
+	height: 200px;
+	resize: both;
+	overflow: auto;
+}
+
+input, textarea {
+	background-color: $color-complement-1;
+	color:$color-primary-3;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: $color-complement-1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: $color-complement-3; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: $color-complement-4; 
+}
+
+
+/* transition reset view */
+#cover {
+    width: 0;
+    height: 100vh;
+    background-color: $color-complement-0;
+    border: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+ 
+.anime5 {
+    animation: animemove5 1.5s linear forwards;
+}
+ 
+@keyframes animemove5 {
+  0% {}
+  100% {
+width: 100vw;
+  }
+}
+
+.bodyfadeout {
+	transition: opacity 1s, visibility 1s;
+  opacity: 0;
+  visibility: hidden;
+}
+

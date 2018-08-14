@@ -1,0 +1,71 @@
+* {
+	 font-family: 'mplus-1-*7w-sub.*3f', sans-serif;
+}
+
+.hidden {
+	display: none;
+}
+
+.datepicker-here {
+	width: 200px;
+}
+
+.btn, .datepicker-here {
+	height: 30px;
+}
+
+.date {
+	margin-top: 30px;
+	border: solid 1px #DCDCDC;
+	width: 768px;
+}
+
+.date * {
+	margin: 0;
+}
+
+.date-discripton {
+}
+
+.time-block-field {
+	height: 27px;
+	display: flex;
+}
+
+.time-block {
+	height: 27px;
+	width: 14px;
+	border: solid 1px #DCDCDC;
+}
+
+.time-block:hover {
+	background-color: #8ece91;
+}
+
+.selected {
+	background-color: #83bf86;
+}
+
+.flexbox {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#result {
+	margin: 0 auto;
+	min-width: 80%;
+	min-height: 200px;
+	resize: both;
+}
+
+.active-amber-textarea-2 textarea.md-textarea {
+    border-bottom: 1px solid #ffa000;
+    box-shadow: 0 1px 0 0 #ffa000;
+}
+.active-amber-textarea-2.md-form label.active {
+    color: #ffa000;
+}
+.active-amber-textarea-2.md-form label {
+    color: #ffa000;
+}
